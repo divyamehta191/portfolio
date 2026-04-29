@@ -1,0 +1,120 @@
+/* Simple Clean Contact.css - No Boxes */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-section {
+  width: 100%;
+  padding: 80px 8%;
+  background: #ffffff;
+  text-align: center;
+}
+
+/* Heading */
+.contact-top {
+  max-width: 650px;
+  margin: 0 auto 35px;
+}
+
+.tag {
+  font-size: 14px;
+  font-weight: 600;
+  color: purple;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.contact-top h2 {
+  font-size: 40px;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.subtext {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* Contact Info */
+.contact-container {
+  margin-bottom: 35px;
+}
+
+.contact-card {
+  margin-bottom: 18px;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.contact-card h3 {
+  display: inline-block;
+  font-size: 18px;
+  color: purple;
+  margin-right: 8px;
+}
+
+.contact-card p {
+  display: inline-block;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Button */
+.hire-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: purple;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hire-btn:hover {
+  background: #6a0dad;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 65px 6%;
+  }
+
+  .contact-top h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 50px 5%;
+  }
+
+  .contact-top h2 {
+    font-size: 28px;
+  }
+
+  .subtext {
+    font-size: 14px;
+  }
+
+  .contact-card h3,
+  .contact-card p {
+    display: block;
+    margin: 4px 0;
+  }
+
+  .hire-btn {
+    width: 100%;
+    max-width: 220px;
+  }
+}

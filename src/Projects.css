@@ -1,0 +1,192 @@
+/* ===== PROJECT SECTION (Purple + White Theme) ===== */
+
+.projects{
+  background: rgba(161, 106, 161, 0.811);
+  padding: 100px 8%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.projects h2{
+  font-size: 45px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.projects h2::after{
+  content: "";
+  width: 110px;
+  height: 5px;
+  background: purple;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 10px;
+}
+
+.projects p{
+  color: #666;
+}
+
+/* ===== AUTO SLIDER ===== */
+.cards{
+  display: flex;
+  gap: 25px;
+  margin-top: 55px;
+  width: max-content;
+  animation: scrollLeft 24s linear infinite;
+}
+
+/* Pause on hover */
+.cards:hover{
+  animation-play-state: paused;
+}
+
+/* ===== CARD ===== */
+.card{
+  min-width: 350px;
+  flex-shrink: 0;
+  background: white;
+  border-radius: 24px;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(128,0,128,0.08);
+  box-shadow: 0 12px 25px rgba(128,0,128,0.08);
+  transition: 0.4s ease;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 22px 35px rgba(128,0,128,0.16);
+}
+
+/* ===== IMAGE ===== */
+.card img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 18px;
+  transition: 0.4s ease;
+}
+
+.card:hover img{
+  transform: scale(1.08);
+}
+
+/* ===== TEXT ===== */
+.card h3{
+  font-size: 24px;
+  color: purple;
+  margin-top: 18px;
+}
+
+.card p{
+  margin-top: 12px;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ===== BUTTONS OVER IMAGE ===== */
+.project-buttons{
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 12px;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.card:hover .project-buttons{
+  opacity: 1;
+  top: 50%;
+}
+
+.project-btn{
+  text-decoration: none;
+  padding: 11px 15px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+/* GitHub */
+.project-btn.github{
+  background: #835f9d;
+}
+
+.project-btn.github:hover{
+  background: #32005a;
+}
+
+/* Live Demo */
+.project-btn.demo{
+  background: purple;
+}
+
+.project-btn.demo:hover{
+  background: #6a0dad;
+}
+
+/* ===== AUTO SCROLL ===== */
+@keyframes scrollLeft{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 768px){
+
+.projects{
+  padding: 70px 6%;
+}
+
+.projects h2{
+  font-size: 34px;
+}
+
+.card{
+  min-width: 290px;
+}
+
+.card img{
+  height: 190px;
+}
+
+.project-buttons{
+  flex-direction: column;
+  gap: 10px;
+}
+
+}
+
+@media(max-width: 480px){
+
+.projects{
+  padding: 55px 5%;
+}
+
+.card{
+  min-width: 250px;
+}
+
+.card h3{
+  font-size: 20px;
+}
+
+.card p{
+  font-size: 14px;
+}
+
+.card img{
+  height: 170px;
+}
+
+}
