@@ -2,7 +2,7 @@ import "./Contact.css";
 
 function Contact() {
   return (
-    <section className="contact-section">
+    <section id="contact"className="contact-section">
       <div className="contact-top">
         <p className="tag">LET'S CONNECT</p>
         <h2>Contact Me</h2>
@@ -16,13 +16,19 @@ function Contact() {
         <div className="contact-card">
           {/* <span className="icon">📧</span> */}
           <h3>Email</h3>
-          <p>divyamehta610@gmail.com</p>
+          <p >divyamehta610@gmail.com</p>
         </div>
 
         <div className="contact-card">
           {/* <span className="icon">📞</span> */}
           <h3>Phone</h3>
-          <p>+91 70273 16762</p>
+          <p><a
+  href="https://wa.me/917027316762"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  7027316762
+</a></p>
         </div>
 
         <div className="contact-card">
@@ -33,9 +39,12 @@ function Contact() {
       </div>
 
       <div className="contact-btn">
-        <a href="mailto:divyamehta610@gmail.com" className="hire-btn">
-          Hire Me
-        </a>
+       <a
+  href="mailto:divyamehta610@gmail.com?subject=Hiring Inquiry&body=Hi Divya, I want to connect with you."
+  className="hire-btn"
+>
+  Hire Me
+</a>
       </div>
     </section>
   );

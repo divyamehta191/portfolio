@@ -59,8 +59,25 @@ function Home() {
         </p>
 
         <div className="btns">
-          <button className="primary">View Projects</button>
-          <button className="secondary">Hire Me</button>
+    <button
+  id="projects"
+  className="primary"
+  onClick={() => {
+    document
+      .getElementById("projects-section")
+      ?.scrollIntoView({ behavior: "smooth" });
+  }}
+>
+  View Projects
+</button>
+         <button
+  className="secondary"
+  onClick={() => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  }}
+>
+  Hire Me
+</button>
         </div>
       </div>
     </section>

@@ -43,7 +43,7 @@
 
 /* ===== CARD ===== */
 .card{
-  min-width: 350px;
+  max-width: 430px;
   flex-shrink: 0;
   background: white;
   border-radius: 24px;
