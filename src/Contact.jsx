@@ -16,7 +16,17 @@ function Contact() {
         <div className="contact-card">
           {/* <span className="icon">📧</span> */}
           <h3>Email</h3>
-          <p >divyamehta610@gmail.com</p>
+    <p>
+
+
+<a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=divyamehta610@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  divyamehta610@gmail.com
+</a>
+</p>
         </div>
 
         <div className="contact-card">
@@ -38,14 +48,14 @@ function Contact() {
         </div>
       </div>
 
-      <div className="contact-btn">
+      {/* <div className="contact-btn">
        <a
   href="mailto:divyamehta610@gmail.com?subject=Hiring Inquiry&body=Hi Divya, I want to connect with you."
   className="hire-btn"
 >
   Hire Me
 </a>
-      </div>
+      </div> */}
     </section>
   );
 }
