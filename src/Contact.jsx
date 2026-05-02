@@ -33,11 +33,11 @@ function Contact() {
           {/* <span className="icon">📞</span> */}
           <h3>Phone</h3>
           <p><a
-  href="https://wa.me/917027316762"
+  href="https://wa.me/917027460572"
   target="_blank"
   rel="noopener noreferrer"
 >
-  7027316762
+  7027460572
 </a></p>
         </div>
 
