@@ -82,6 +82,25 @@ function Projects() {
       </a>
     </div>
           </div>
+
+          
+  <div className="card">
+    <img src={`${process.env.PUBLIC_URL}/to-do-react.png`} />
+    <h3>to-do react</h3>
+    <p>
+     Built a Todo application using React with a focus on drag and drop functionality for smooth and interactive task reordering.
+    </p>
+
+    <div className="project-buttons">
+      <a href="https://github.com/divyamehta191/to-do-react" target="_blank" rel="noopener noreferrer" className="project-btn github">
+        GitHub
+      </a>
+
+      <a href="https://divyamehta191.github.io/to-do-react/" target="_blank" rel="noopener noreferrer" className="project-btn demo">
+        Live Demo
+      </a>
+    </div>
+  </div>
           
           {/* second looop */}
 
@@ -159,9 +178,27 @@ function Projects() {
       <a href="https://divyamehta191.github.io/mercia-/" target="_blank" rel="noopener noreferrer" className="project-btn demo">
         Live Demo
       </a>
-    </div>
+            </div>
+            
   </div>
 
+  <div className="card">
+    <img src={`${process.env.PUBLIC_URL}/to-do-react.png`} />
+    <h3>to-do react</h3>
+    <p>
+      Built a Todo application using React with a focus on drag and drop functionality for smooth and interactive task reordering.
+    </p>
+
+    <div className="project-buttons">
+      <a href="https://github.com/divyamehta191/to-do-react" target="_blank" rel="noopener noreferrer" className="project-btn github">
+        GitHub
+      </a>
+
+      <a href="https://divyamehta191.github.io/to-do-react/" target="_blank" rel="noopener noreferrer" className="project-btn demo">
+        Live Demo
+      </a>
+    </div>
+  </div>
 </div>
         
 </section>
