@@ -134,6 +134,24 @@ function Projects() {
         Live Demo
       </a>
     </div>
+          </div>
+          
+                   <div className="card">
+    <img src={`${process.env.PUBLIC_URL}/file-uplader.png`} />
+    <h3>File-uploader-app</h3>
+    <p>
+  A File Upload Manager is a React app that lets users upload multiple files with progress tracking, error handling, and status updates. It uses state management (like useReducer) and async logic to simulate or handle uploads, providing a smooth and user-friendly upload experience.
+    </p>
+
+    <div className="project-buttons">
+      <a href="https://github.com/divyamehta191/file-upload-manager" target="_blank" rel="noopener noreferrer" className="project-btn github">
+        GitHub
+      </a>
+
+      <a href="https://divyamehta191.github.io/file-upload-manager/" target="_blank" rel="noopener noreferrer" className="project-btn demo">
+        Live Demo
+      </a>
+    </div>
   </div>
           
           {/* second looop */}
@@ -266,7 +284,25 @@ function Projects() {
         Live Demo
       </a>
     </div>
+          </div>
+                           <div className="card">
+    <img src={`${process.env.PUBLIC_URL}/file-uplader.png`} />
+    <h3>File-uploader-app</h3>
+    <p>
+  A File Upload Manager is a React app that lets users upload multiple files with progress tracking, error handling, and status updates. It uses state management (like useReducer) and async logic to simulate or handle uploads, providing a smooth and user-friendly upload experience.
+    </p>
+
+    <div className="project-buttons">
+      <a href="https://github.com/divyamehta191/file-upload-manager" target="_blank" rel="noopener noreferrer" className="project-btn github">
+        GitHub
+      </a>
+
+      <a href="https://divyamehta191.github.io/file-upload-manager/" target="_blank" rel="noopener noreferrer" className="project-btn demo">
+        Live Demo
+      </a>
+    </div>
   </div>
+          
 </div>
         
 </section>
